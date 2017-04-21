@@ -12,3 +12,11 @@ body { padding-top: 70px; }
 input.ng-invalid {
 	border: rgba(215, 44, 44, 0.6) solid 1px;
 }
+
+body {
+	background: url("../img/fantasy/02 - g4y787q.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 16%;
+
+}
