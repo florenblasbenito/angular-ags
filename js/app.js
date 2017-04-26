@@ -56,6 +56,7 @@ app.factory('Expenses', function($http) {
   $http.get('https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json').
     success(function(data){
       service.entries = data.Brastlewark;
+     //".Brastlewark" Here the call to the data of the json structure
 
       //convert date strings to Date objects
       service.entries.forEach(function(element){
