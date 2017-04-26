@@ -1,4 +1,4 @@
-var app = angular.module('expensesApp', ['ngRoute'])
+var app = angular.module('app', ['ngRoute'])
 
 //helper
 var myHelpers = {
@@ -53,9 +53,9 @@ app.factory('Expenses', function($http) {
 
   service.entries = [];
 
-  $http.get('data/get_all.json').
+  $http.get('https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json').
     success(function(data){
-      service.entries = data;
+      service.entries = data.Brastlewark;
 
       //convert date strings to Date objects
       service.entries.forEach(function(element){
