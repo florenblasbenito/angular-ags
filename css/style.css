@@ -20,3 +20,9 @@ body {
 	padding-top: 16%;
 
 }
+.list-group {
+	padding-left: 0;
+  	margin-bottom: 20px;
+  	overflow: auto;
+  	max-height: 214px;
+  }
