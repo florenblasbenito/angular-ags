@@ -33,8 +33,8 @@ app.config(['$routeProvider', function($routeProvider){
       controller  : 'ExpensesViewController'
     })
 
-    .when('/expenses', {
-      templateUrl : 'views/prove.html',
+    .when('/expenses/intro', {
+      templateUrl : 'views/intro.html',
       controller  : 'ExpensesViewController'
     })
     .when('/expenses/new', {
@@ -45,6 +45,7 @@ app.config(['$routeProvider', function($routeProvider){
       templateUrl : 'views/expenseForm.html',
       controller  : 'ExpenseViewController'
     })
+    
     .otherwise({
       redirectTo: '/'
     });
