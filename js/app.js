@@ -28,13 +28,17 @@ app.config(['$routeProvider', function($routeProvider){
       templateUrl : 'views/population.html',
       controller  : 'ExpensesViewController'
     })
-    .when('population', {
+    .when('/population', {
       templateUrl : 'views/population.html',
       controller  : 'ExpensesViewController'
     })
 
     .when('/population/intro', {
       templateUrl : 'views/intro.html',
+      controller  : 'ExpensesViewController'
+    })
+    .when('profile', {
+      templateUrl : 'views/profile.html',
       controller  : 'ExpensesViewController'
     })
     .when('/expenses/new', {
