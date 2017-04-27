@@ -14,15 +14,39 @@ input.ng-invalid {
 }
 
 body {
-	background: url("../img/fantasy/intro-2.jpg");
+	
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-top: 16%;
+	/*padding-top: 16%;*/
 
 }
+#screen-one {
+	background: url("../img/fantasy/02 - g4y787q.jpg");
+	position: absolute;
+    top: 0;
+    left: 0;
+	height: 100%;
+	 width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
 .list-group {
 	padding-left: 0;
   	margin-bottom: 20px;
   	overflow: auto;
   	max-height: 214px;
   }
+section#screen-two {
+    background: url("../img/fantasy/intro-2.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+	height: 100%;
+	    width: 100%;
+		background-repeat: no-repeat;
+	background-size: cover;
+}
+.ags_bintro {
+    position: relative;
+    top: 600px;
+}
