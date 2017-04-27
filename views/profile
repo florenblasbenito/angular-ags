@@ -1,9 +1,21 @@
-<span class="pull-left">Nombre:</span>{{expense.thumbnail}}
 
-<button type="button" class="btn btn-danger btn-s pull-right btn-separation-left" ng-click="remove(expense)">
-    <span class="glyphicon glyphicon-trash"> </span>
-    </button>
-<a href="#expenses/edit/{{expense.id}}" class="btn btn-primary btn-s pull-right">
-    <span class="glyphicon glyphicon-pencil">
-    </span>
-</a>
+
+<section id="screen-two" class="col-xs-12">
+
+  <div>
+	<div class="button-row">
+		<a href="#expenses/new" class="btn btn-success btn-lg btn-block">
+Total population</a>
+	</div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item text-center" ng-repeat="expense in expenses">
+        <zva-expense></zva-expense>
+      </li>
+    </ul>   
+  </div>
+  </div>
+</section>
+

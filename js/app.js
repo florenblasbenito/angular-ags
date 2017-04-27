@@ -37,7 +37,7 @@ app.config(['$routeProvider', function($routeProvider){
       templateUrl : 'views/intro.html',
       controller  : 'ExpensesViewController'
     })
-    .when('profile', {
+    .when('/population/profile', {
       templateUrl : 'views/profile.html',
       controller  : 'ExpensesViewController'
     })
