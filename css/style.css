@@ -39,14 +39,14 @@ body {
 section#screen-two {
     background: url("../img/fantasy/intro-2.jpg");
     position: absolute;
-    top: 0;
+    top: 51px;
     left: 0;
 	height: 100%;
-	    width: 100%;
-		background-repeat: no-repeat;
+	width: 100%;
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 .ags_bintro {
     position: relative;
-    top: 600px;
+    top: 93%;
 }
