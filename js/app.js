@@ -32,6 +32,11 @@ app.config(['$routeProvider', function($routeProvider){
       templateUrl : 'views/expenses.html',
       controller  : 'ExpensesViewController'
     })
+
+    .when('/expenses', {
+      templateUrl : 'views/prove.html',
+      controller  : 'ExpensesViewController'
+    })
     .when('/expenses/new', {
       templateUrl : 'views/expenseForm.html',
       controller  : 'ExpenseViewController'
