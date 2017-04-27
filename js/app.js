@@ -25,15 +25,15 @@ var myHelpers = {
 app.config(['$routeProvider', function($routeProvider){
   $routeProvider
     .when('/', {
-      templateUrl : 'views/expenses.html',
+      templateUrl : 'views/population.html',
       controller  : 'ExpensesViewController'
     })
-    .when('/expenses', {
-      templateUrl : 'views/expenses.html',
+    .when('population', {
+      templateUrl : 'views/population.html',
       controller  : 'ExpensesViewController'
     })
 
-    .when('/expenses/intro', {
+    .when('/population/intro', {
       templateUrl : 'views/intro.html',
       controller  : 'ExpensesViewController'
     })
