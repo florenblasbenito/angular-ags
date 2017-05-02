@@ -37,9 +37,9 @@ app.config(['$routeProvider', function($routeProvider){
       templateUrl : 'views/intro.html',
       controller  : 'ExpensesViewController'
     })
-    .when('/population/profile', {
+    .when('/population/profile/:id', {
       templateUrl : 'views/profile.html',
-      controller  : 'ExpensesViewController'
+      controller  : 'ExpenseViewController'
     })
     .when('/expenses/new', {
       templateUrl : 'views/expenseForm.html',
@@ -149,6 +149,8 @@ app.controller('ExpensesViewController', ['$scope', 'Expenses', function($scope,
 //create or edit an expense
 app.controller('ExpenseViewController', ['$scope', '$routeParams', '$location', 'Expenses', function($scope, $routeParams, $location, Expenses) {
   
+  
+
   //the expense will either be a new one or existing one if we are editing
   if(!$routeParams.id) {
     $scope.expense = {date: new Date()}
@@ -156,7 +158,9 @@ app.controller('ExpenseViewController', ['$scope', '$routeParams', '$location', 
   else {
     //clone makes a copy of an object, so we don't modify the real object before clicking Save
     $scope.expense = _.clone(Expenses.getById($routeParams.id));
+    
   }
+  
 
   //push the expense to the array of expenses. Duplicate entries will thow error unless adding  "track by $index" to the ng-repeat directive
   $scope.save = function() {
