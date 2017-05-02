@@ -50,8 +50,6 @@ section#screen-two {
     position: relative;
     top: 93%;
 }
-.prueba {
-	float: left;
-	width: 200px;
-	height: 200px;
+.ags__name-left {
+	float: left !important;
 }
