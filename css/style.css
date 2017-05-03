@@ -46,6 +46,16 @@ section#screen-two {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+section#screen-three {
+    background: url("../img/fantasy/population.jpg");
+    position: absolute;
+    top: 51px;
+    left: 0;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .ags_bintro {
     position: relative;
     top: 93%;
