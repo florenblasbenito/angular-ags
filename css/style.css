@@ -134,6 +134,11 @@ img.ags__name-left {
 .profile_population-blockgnome {
 	float: left;
 }
+@media (max-width: 768px) {
+    .profile_population-blockgnome {
+       padding: 0;
+    }
+}
 .profile__population-goout {
 	clear: both;
     border-color: #4cae4c;
