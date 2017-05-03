@@ -156,7 +156,10 @@ img.ags__name-left {
 }
 .ags__botton-tpopulation {
 	background: #000000;
-	color: #ffffff;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+    border-radius: 12px 12px 0 0
 }
 .ags__blockstory-two {
 	position: absolute;
