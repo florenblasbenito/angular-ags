@@ -4,9 +4,13 @@ body { padding-top: 70px; }
 	margin-left:5px;
 }
 
-.button-row {
+.block-title {
 	padding-top: 10px;
-	padding-bottom: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    background: black;
+    text-align: center;
 }
 
 input.ng-invalid {
@@ -37,14 +41,25 @@ body {
   	max-height: 214px;
   }
 section#screen-two {
-    background: url("../img/fantasy/intro-2.jpg");
-    position: absolute;
+    background: url(../img/fantasy/intro-2.jpg);
+    position: fixed;
     top: 51px;
     left: 0;
-	height: 100%;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 228px;
+    padding-left: 96px;
+    padding-right: 365px;
+    padding-top: 308px;
+}
+
+@media (max-width: 768px) {
+    section#screen-two {
+        padding-right: 0px;
+    	padding-left: 34px;
+    }
 }
 section#screen-three {
     background: url("../img/fantasy/population.jpg");
@@ -108,6 +123,11 @@ img.ags__name-left {
     z-index: 1111;
     text-align: right;
 }
+@media (max-width: 768px) {
+    .profile__population-goout {
+    	left: 76%;
+    }
+}
 .profile__population-goouttext {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	margin-left: 12px;
@@ -126,10 +146,22 @@ img.ags__name-left {
     font-size: 28px;
     top: 100px;
 }
+@media (max-width: 768px) {
+    .ags__blockstory{
+    	padding-left: inherit;
+    }
+}
 .navbar-brand a {
 	font-size: 30px !important;
 }
 .ags__botton-tpopulation {
 	background: #000000;
 	color: #ffffff;
+}
+.ags__blockstory-two {
+	position: absolute;
+    color: white;
+    font-size: 28px;
+    top: 100px;
+    left: 80px;
 }
