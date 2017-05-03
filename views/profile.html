@@ -1,5 +1,7 @@
-<a href="#" class="profile__population-goout"><p class="glyphicon glyphicon-log-out
-"><span class="profile__population-goouttext">Go out</span></p></a>
+<a href="#" class="profile__population-goout">
+    <p class="glyphicon glyphicon-log-out
+"><span class="profile__population-goouttext">Go out</span></p>
+</a>
 
 <section id="screen-three" class="col-xs-12 img-responsive">
     <div class="button-row">
@@ -18,10 +20,12 @@
             <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Professions: </span>
             <span ng-repeat="profession in expense.professions" class="ags__name-point">{{profession}}</span></span>
             <div ng-if="!!expense.friends.length"><span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Friends: </span>
-            <span ng-repeat="friend in expense.friends" class="ags__name-point">{{friend}}</span></span></span></div>
+                <span ng-repeat="friend in expense.friends" class="ags__name-point">{{friend}}</span></span>
+                </span>
+            </div>
         </div>
     </section>
 
-<div class="col-xs-8 col-md-5 ags__blockstory-two ng-scope">
-  <p class="col-xs-10 ags__blockstory-finish">To be continued</p>
+    <div class="col-xs-8 col-md-5 ags__blockstory-two ng-scope">
+        <p class="col-xs-10 ags__blockstory-finish">To be continued</p>
     </div>
