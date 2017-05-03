@@ -61,9 +61,14 @@ section#screen-three {
         height: inherit;
     }
 }
-.ags_bintro {
-    position: relative;
+.ags_bintro, .ags_bintro:active {
+    position: absolute;
     top: 93%;
+    border: 0;
+    background: black;
+}
+.ags_bintro {
+    background: inherit;
 }
 .ags__name-left {
 	float: left !important;
@@ -112,4 +117,19 @@ img.ags__name-left {
 }
 .ags__name-point:last-child:after { 
      content: "" !important;
+}
+.ags__blockstory {
+    float: left;
+    position: relative;
+    color: white;
+    padding-left: 64px;
+    font-size: 28px;
+    top: 100px;
+}
+.navbar-brand a {
+	font-size: 30px !important;
+}
+.ags__botton-tpopulation {
+	background: #000000;
+	color: #ffffff;
 }
