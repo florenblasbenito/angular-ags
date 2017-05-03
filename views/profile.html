@@ -1,10 +1,18 @@
 <section id="screen-three" class="col-xs-12">
-<div class="button-row">
-    <a href="#expenses/new" class="btn btn-success btn-lg btn-block">
-Profile population</a>
-</div>
-<div class="col-xs-5">
-    <img src="{{expense.thumbnail}}" alt="" height="192" width="192" class="ags__name-left">
-    <span class="pull-left ags__name-left">Name: </span>
-</div>
-</div>
+    <div class="button-row">
+        <a href="#expenses/new" class="btn btn-success btn-lg btn-block">Profile population</a>
+    </div>
+
+    <section class="profile_population col-xs-8">
+        <div>
+            <img src="{{expense.thumbnail}}" alt="" height="192" width="192" class="img-responsive ags__name-left">
+            <span class="pull-left ags__name-left">Name: {{expense.name}}</span>
+            <span class="pull-left ags__name-left">Age: {{expense.age}}</span>
+            <span class="pull-left ags__name-left">Weight: {{expense.weight}}</span>
+            <span class="pull-left ags__name-left">Height: {{expense.height}}</span>
+            <span class="pull-left ags__name-left">Hair color: {{expense.hair_color}}</span>
+            <span class="pull-left ags__name-left">Pfofessions: {{expense.professions}}</span>
+            <span class="pull-left ags__name-left">friends: {{expense.friends}}</span>
+        </div>
+    </section>
+    </div>

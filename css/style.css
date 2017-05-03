@@ -63,3 +63,8 @@ section#screen-three {
 .ags__name-left {
 	float: left !important;
 }
+
+.profile_population {
+	float: left;
+	background: #ffffff;
+}
