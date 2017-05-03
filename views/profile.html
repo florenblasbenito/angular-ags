@@ -15,7 +15,8 @@
             <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Weight: </span>{{expense.weight}}</span>
             <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Height: </span>{{expense.height}}</span>
             <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Hair color: </span>{{expense.hair_color}}</span>
-            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Professions: </span>{{expense.professions}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Professions: </span>
+            <span ng-repeat="profession in expense.professions"> {{profession}}</span></span>
             <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Friends: </span>{{expense.friends}}</span>
         </div>
     </section>
