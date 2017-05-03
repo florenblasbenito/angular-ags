@@ -107,3 +107,9 @@ img.ags__name-left {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	margin-left: 12px;
 }
+.ags__name-point:after {
+    content: ",";
+}
+.ags__name-point:last-child:after { 
+     content: "" !important;
+}
