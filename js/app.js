@@ -37,6 +37,10 @@ app.config(['$routeProvider', function($routeProvider){
       templateUrl : 'views/intro.html',
       controller  : 'ExpensesViewController'
     })
+     .when('/population/touring', {
+      templateUrl : 'views/touring.html',
+      controller  : 'ExpensesViewController'
+    })
     .when('/population/profile/:id', {
       templateUrl : 'views/profile.html',
       controller  : 'ExpenseViewController'

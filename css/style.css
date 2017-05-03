@@ -34,6 +34,16 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
   }
+  #screen-five {
+	background: url("../img/fantasy/touring.jpg");
+	position: absolute;
+    top: 0;
+    left: 0;
+	height: 100%;
+	 width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
 .list-group {
 	padding-left: 0;
   	margin-bottom: 20px;
@@ -73,14 +83,16 @@ section#screen-three {
         height: inherit;
     }
 }
-.ags_bintro, .ags_bintro:active {
+.ags_bintro, .ags_bintro:active, .ags_bintro:hover {
     position: absolute;
     top: 93%;
     border: 0;
-    background: black;
+    background: #000000;
 }
 .ags_bintro {
-    background: inherit;
+    background: #000000;
+    position: fixed;
+
 }
 .ags__name-left {
 	float: left !important;
@@ -165,6 +177,7 @@ img.ags__name-left {
     text-align: center;
     border-radius: 12px 12px 0 0;
     margin-top: 15px;
+    font-size: 19px;
 }
 .ags__blockstory-two {
 	position: absolute;
