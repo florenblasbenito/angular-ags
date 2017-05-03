@@ -3,16 +3,17 @@
         <a href="#expenses/new" class="btn btn-success btn-lg btn-block">Profile population</a>
     </div>
 
-    <section class="profile_population col-xs-8">
-        <div>
-            <img src="{{expense.thumbnail}}" alt="" height="192" width="192" class="img-responsive ags__name-left">
-            <span class="pull-left ags__name-left">Name: {{expense.name}}</span>
-            <span class="pull-left ags__name-left">Age: {{expense.age}}</span>
-            <span class="pull-left ags__name-left">Weight: {{expense.weight}}</span>
-            <span class="pull-left ags__name-left">Height: {{expense.height}}</span>
-            <span class="pull-left ags__name-left">Hair color: {{expense.hair_color}}</span>
-            <span class="pull-left ags__name-left">Pfofessions: {{expense.professions}}</span>
-            <span class="pull-left ags__name-left">friends: {{expense.friends}}</span>
+    <section class="profile_population col-xs-12">
+        
+            <img src="{{expense.thumbnail}}" alt="" height="192" width="192" class="img-responsive row col-xs-12 col-md-3 ags__name-left">
+            <div class="col-xs-8 profile_population-blockgnome">
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Name: </span>{{expense.name}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Age: </span>{{expense.age}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Weight: </span>{{expense.weight}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Height: </span>{{expense.height}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Hair color: </span>{{expense.hair_color}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Professions: </span>{{expense.professions}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Friends: </span>{{expense.friends}}</span>
         </div>
     </section>
     </div>

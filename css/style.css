@@ -56,15 +56,39 @@ section#screen-three {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+@media (max-width: 768px) {
+    section#screen-three {
+        height: inherit;
+    }
+}
 .ags_bintro {
     position: relative;
     top: 93%;
 }
 .ags__name-left {
 	float: left !important;
+    border-bottom: 1px solid #2a6496;
+    margin-left: 20px;
+    line-height: 2.5em;
+	background: #ffffff;
 }
 
 .profile_population {
 	float: left;
-	background: #ffffff;
+    background: transparent;
+    padding: 25px;
+    border: 2px solid #ffffff;
+}
+
+.profile_population-gnome {
+	font-size: 15px;
+    color: #2a6496;
+	font-weight: bold;
+}
+img.ags__name-left {
+    border: 1px solid #ffffff;
+	padding: 0;
+}
+.profile_population-blockgnome {
+	float: left;
 }
