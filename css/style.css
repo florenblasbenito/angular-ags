@@ -49,10 +49,7 @@ section#screen-two {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 228px;
-    padding-left: 96px;
-    padding-right: 365px;
-    padding-top: 308px;
+    padding: 252px 365px 0 96px;
 }
 
 @media (max-width: 768px) {
@@ -62,8 +59,8 @@ section#screen-two {
     }
 }
 section#screen-three {
-    background: url("../img/fantasy/population.jpg");
-    position: absolute;
+    background: url("../img/fantasy/population_3.jpg");
+    position: fixed;
     top: 51px;
     left: 0;
 	height: 100%;
@@ -111,6 +108,7 @@ img.ags__name-left {
 }
 .profile_population-blockgnome {
 	float: left;
+    padding-left: 32px;
 }
 .profile__population-goout {
 	clear: both;
@@ -151,6 +149,12 @@ img.ags__name-left {
     	padding-left: inherit;
     }
 }
+
+.ags__blockstory-finish {
+    bottom: 0;
+    position: fixed;
+    text-align: right;
+}
 .navbar-brand a {
 	font-size: 30px !important;
 }
@@ -159,7 +163,8 @@ img.ags__name-left {
     color: #ffffff;
     padding: 16px;
     text-align: center;
-    border-radius: 12px 12px 0 0
+    border-radius: 12px 12px 0 0;
+    margin-top: 15px;
 }
 .ags__blockstory-two {
 	position: absolute;
@@ -167,4 +172,22 @@ img.ags__name-left {
     font-size: 28px;
     top: 100px;
     left: 80px;
+}
+
+@media (max-width: 768px) {
+    .ags__blockstory-two {
+    	position: absolute;
+        color: white;
+        font-size: 21px;
+        top: 100px;
+        left: 21px;
+    }
+}
+
+
+.list-group-item {
+    text-align: left;
+}
+.ags__block-paddingr {
+    padding-right: 5px;
 }
