@@ -92,3 +92,18 @@ img.ags__name-left {
 .profile_population-blockgnome {
 	float: left;
 }
+.profile__population-goout {
+	clear: both;
+    border-color: #4cae4c;
+    float: right;
+    margin-top: 12px;
+    top: 0;
+    position: absolute;
+    left: 92%;
+    z-index: 1111;
+    text-align: right;
+}
+.profile__population-goouttext {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin-left: 12px;
+}
