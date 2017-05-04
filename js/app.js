@@ -54,8 +54,8 @@ app.config(['$routeProvider', function($routeProvider){
 
 //this service will take care of keeping track of the expenses and other operations
 //for more on services see the documentation: https://docs.angularjs.org/guide/providers
-//you can access the factory from the console by doing: angular.element(document.body).injector().get('Expenses')
-app.factory('Expenses', function($http) {
+//you can access the factory from the console by doing: angular.element(document.body).injector().get('summons')
+app.factory('summons', function($http) {
   var service = {};
 
   service.entries = [];
@@ -76,7 +76,7 @@ app.factory('Expenses', function($http) {
 
   //get the next id. we only need this because we are not connecting to a server
   //if you were, normally the backend should return the id of the new element you are creating
-  //to test use this in the console: angular.element(document.body).injector().get('Expenses').getNewId()
+  //to test use this in the console: angular.element(document.body).injector().get('summons').getNewId()
   service.getNewId = function() {
 
     //if we already have one, increase by 1
@@ -130,21 +130,21 @@ app.factory('Expenses', function($http) {
 });
 
 //listing of all expenses
-app.controller('BrastlewarkViewController', ['$scope', 'Expenses', function($scope, Expenses) {
-  $scope.expenses = Expenses.entries;
+app.controller('BrastlewarkViewController', ['$scope', 'summons', function($scope, summons) {
+  $scope.expenses = summons.entries;
 
   $scope.remove = function(call) {
-    Expenses.remove(call);
+    summons.remove(call);
   };
 
   //we need to watch the list of expenses more closely to have it always updated
-  $scope.$watch(function () { return Expenses.entries; }, function (entries) {
+  $scope.$watch(function () { return summons.entries; }, function (entries) {
     $scope.expenses = entries;
   });
 }]);
 
 //create or edit an expense
-app.controller('PopulationViewController', ['$scope', '$routeParams', '$location', 'Expenses', function($scope, $routeParams, $location, Expenses) {
+app.controller('PopulationViewController', ['$scope', '$routeParams', '$location', 'summons', function($scope, $routeParams, $location, summons) {
   
   
 
@@ -154,13 +154,13 @@ app.controller('PopulationViewController', ['$scope', '$routeParams', '$location
   }
   else {
     //clone makes a copy of an object, so we don't modify the real object before clicking Save
-    $scope.appeal = _.clone(Expenses.getById($routeParams.id));  
+    $scope.appeal = _.clone(summons.getById($routeParams.id));  
   }
   
 
   //push the expense to the array of expenses. Duplicate entries will thow error unless adding  "track by $index" to the ng-repeat directive
   $scope.save = function() {
-    Expenses.save($scope.appeal);          
+    summons.save($scope.appeal);          
     $location.path('/');
   };
 }]);
