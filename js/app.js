@@ -26,33 +26,26 @@ app.config(['$routeProvider', function($routeProvider){
   $routeProvider
     .when('/', {
       templateUrl : 'views/population.html',
-      controller  : 'ExpensesViewController'
+      controller  : 'BrastlewarkViewController'
     })
     .when('/population', {
       templateUrl : 'views/population.html',
-      controller  : 'ExpensesViewController'
+      controller  : 'BrastlewarkViewController'
     })
 
     .when('/population/intro', {
       templateUrl : 'views/intro.html',
-      controller  : 'ExpensesViewController'
+      controller  : 'BrastlewarkViewController'
     })
      .when('/population/touring', {
       templateUrl : 'views/touring.html',
-      controller  : 'ExpensesViewController'
+      controller  : 'BrastlewarkViewController'
     })
     .when('/population/profile/:id', {
       templateUrl : 'views/profile.html',
-      controller  : 'ExpenseViewController'
+      controller  : 'PopulationViewController'
     })
-    .when('/expenses/new', {
-      templateUrl : 'views/expenseForm.html',
-      controller  : 'ExpenseViewController'
-    })
-    .when('/expenses/edit/:id', {
-      templateUrl : 'views/expenseForm.html',
-      controller  : 'ExpenseViewController'
-    })
+
     
     .otherwise({
       redirectTo: '/'
@@ -137,7 +130,7 @@ app.factory('Expenses', function($http) {
 });
 
 //listing of all expenses
-app.controller('ExpensesViewController', ['$scope', 'Expenses', function($scope, Expenses) {
+app.controller('BrastlewarkViewController', ['$scope', 'Expenses', function($scope, Expenses) {
   $scope.expenses = Expenses.entries;
 
   $scope.remove = function(expense) {
@@ -151,7 +144,7 @@ app.controller('ExpensesViewController', ['$scope', 'Expenses', function($scope,
 }]);
 
 //create or edit an expense
-app.controller('ExpenseViewController', ['$scope', '$routeParams', '$location', 'Expenses', function($scope, $routeParams, $location, Expenses) {
+app.controller('PopulationViewController', ['$scope', '$routeParams', '$location', 'Expenses', function($scope, $routeParams, $location, Expenses) {
   
   
 
