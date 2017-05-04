@@ -52,7 +52,7 @@ app.config(['$routeProvider', function($routeProvider){
     });
 }]);
 
-//this service will take care of keeping track of the expenses and other operations
+//this service will take care of keeping track of the declaration and other operations
 //for more on services see the documentation: https://docs.angularjs.org/guide/providers
 //you can access the factory from the console by doing: angular.element(document.body).injector().get('summons')
 app.factory('summons', function($http) {
@@ -129,17 +129,17 @@ app.factory('summons', function($http) {
   return service;
 });
 
-//listing of all expenses
+//listing of all declaration
 app.controller('BrastlewarkViewController', ['$scope', 'summons', function($scope, summons) {
-  $scope.expenses = summons.entries;
+  $scope.declaration = summons.entries;
 
   $scope.remove = function(call) {
     summons.remove(call);
   };
 
-  //we need to watch the list of expenses more closely to have it always updated
+  //we need to watch the list of declaration more closely to have it always updated
   $scope.$watch(function () { return summons.entries; }, function (entries) {
-    $scope.expenses = entries;
+    $scope.declaration = entries;
   });
 }]);
 
@@ -158,7 +158,7 @@ app.controller('PopulationViewController', ['$scope', '$routeParams', '$location
   }
   
 
-  //push the expense to the array of expenses. Duplicate entries will thow error unless adding  "track by $index" to the ng-repeat directive
+  //push the expense to the array of declaration. Duplicate entries will thow error unless adding  "track by $index" to the ng-repeat directive
   $scope.save = function() {
     summons.save($scope.appeal);          
     $location.path('/');
