@@ -133,8 +133,8 @@ app.factory('Expenses', function($http) {
 app.controller('BrastlewarkViewController', ['$scope', 'Expenses', function($scope, Expenses) {
   $scope.expenses = Expenses.entries;
 
-  $scope.remove = function(expense) {
-    Expenses.remove(expense);
+  $scope.remove = function(call) {
+    Expenses.remove(call);
   };
 
   //we need to watch the list of expenses more closely to have it always updated
