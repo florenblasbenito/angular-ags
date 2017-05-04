@@ -161,8 +161,7 @@ app.controller('ExpenseViewController', ['$scope', '$routeParams', '$location', 
   }
   else {
     //clone makes a copy of an object, so we don't modify the real object before clicking Save
-    $scope.expense = _.clone(Expenses.getById($routeParams.id));
-    
+    $scope.expense = _.clone(Expenses.getById($routeParams.id));  
   }
   
 
@@ -178,7 +177,7 @@ app.controller('ExpenseViewController', ['$scope', '$routeParams', '$location', 
 app.directive('zvaExpense', function(){
   return {
     restrict: 'E',  //it means it's for elements (custom html tags)
-    templateUrl: 'views/expense.html',
+    templateUrl: 'views/totalpopulation.html',
     //template: '<div>{{expense.description}}</div>'
   };
 });
