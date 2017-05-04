@@ -74,24 +74,7 @@ app.factory('summons', function($http) {
       alert('error!');
     });
 
-  //get the next id. we only need this because we are not connecting to a server
-  //if you were, normally the backend should return the id of the new element you are creating
-  //to test use this in the console: angular.element(document.body).injector().get('summons').getNewId()
-  service.getNewId = function() {
 
-    //if we already have one, increase by 1
-    if(service.newId) {
-      service.newId++;
-      return service.newId;
-    }
-    else {
-      //find the largest id value using underscore.js
-      //documentation for _.max: http://underscorejs.org/#max
-      var entryMaxId = _.max(service.entries, function(entry){return entry.id});
-      service.newId = entryMaxId.id + 1;
-      return service.newId;
-    }
-  }
 
   //get an entry by id, using underscore.js
   service.getById = function(id) {
