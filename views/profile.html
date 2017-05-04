@@ -10,17 +10,17 @@
 
     <section class="profile_population col-xs-12">
 
-        <img src="{{expense.thumbnail}}" alt="" height="192" width="192" class="img-responsive row col-xs-12 col-md-3 ags__name-left">
+        <img src="{{appeal.thumbnail}}" alt="" height="192" width="192" class="img-responsive row col-xs-12 col-md-3 ags__name-left">
         <div class="col-xs-12 col-md-9 profile_population-blockgnome">
-            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Name: </span>{{expense.name}}</span>
-            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Age: </span>{{expense.age}}</span>
-            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Weight: </span>{{expense.weight}}</span>
-            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Height: </span>{{expense.height}}</span>
-            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Hair color: </span>{{expense.hair_color}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Name: </span>{{appeal.name}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Age: </span>{{appeal.age}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Weight: </span>{{appeal.weight}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Height: </span>{{appeal.height}}</span>
+            <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Hair color: </span>{{appeal.hair_color}}</span>
             <span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Professions: </span>
-            <span ng-repeat="profession in expense.professions" class="ags__name-point">{{profession}}</span></span>
-            <div ng-if="!!expense.friends.length"><span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Friends: </span>
-                <span ng-repeat="friend in expense.friends" class="ags__name-point">{{friend}}</span></span>
+            <span ng-repeat="profession in appeal.professions" class="ags__name-point">{{profession}}</span></span>
+            <div ng-if="!!appeal.friends.length"><span class="col-xs-12 pull-left ags__name-left"><span class="profile_population-gnome">Friends: </span>
+                <span ng-repeat="friend in appeal.friends" class="ags__name-point">{{friend}}</span></span>
                 </span>
             </div>
         </div>

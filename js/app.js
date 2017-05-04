@@ -150,17 +150,17 @@ app.controller('PopulationViewController', ['$scope', '$routeParams', '$location
 
   //the expense will either be a new one or existing one if we are editing
   if(!$routeParams.id) {
-    $scope.expense = {date: new Date()}
+    $scope.appeal = {date: new Date()}
   }
   else {
     //clone makes a copy of an object, so we don't modify the real object before clicking Save
-    $scope.expense = _.clone(Expenses.getById($routeParams.id));  
+    $scope.appeal = _.clone(Expenses.getById($routeParams.id));  
   }
   
 
   //push the expense to the array of expenses. Duplicate entries will thow error unless adding  "track by $index" to the ng-repeat directive
   $scope.save = function() {
-    Expenses.save($scope.expense);          
+    Expenses.save($scope.appeal);          
     $location.path('/');
   };
 }]);
