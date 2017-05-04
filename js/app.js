@@ -84,24 +84,7 @@ app.factory('summons', function($http) {
     return _.find(service.entries, function(entry){return entry.id == id});
   };
 
-  //update an entry
-  service.save = function(entry) {
-     //find element we want to update
-    var toUpdate = service.getById(entry.id);
 
-    //if exists we update
-    if(toUpdate) {
-      //we'll copy all the properties from "entry" to the object we want to update
-      //documentation for _.extend: http://underscorejs.org/#extend
-      _.extend(toUpdate, entry);
-    }
-    //otherwise we create it
-    else {
-      entry.id = service.getNewId()
-      service.entries.push(entry);
-    }
-    
-  };
 
   //remove an entry
   service.remove = function(entry) {
